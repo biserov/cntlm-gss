@@ -1,6 +1,7 @@
 [Unit]
 Description=CNTLM HTTP Accelerator For NTLM/Kerberos Secured Proxies Authenticator
 After=network.target auditd.service
+Requires=user-runtime-dir@.service
 
 [Service]
 Type=forking
